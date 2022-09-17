@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocalStorage } from '../localStorage/useLocalStorage';
+import { useLocalStorage } from '../local-storage/useLocalStorage';
 
 const TodoContext = React.createContext();
 

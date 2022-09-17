@@ -1,14 +1,14 @@
 import React from 'react';
 import { TodoContext } from '../context/TodoContext';
-import { TodoCounter } from '../components/TodoCounter';
-import { TodoSearch } from '../components/TodoSearch';
-import { TodoList } from '../components/TodoList';
-import { TodoItem } from '../components/TodoItem';
-import { TodosError } from '../TodosError';
-import { TodosLoading } from '../TodosLoading';
-import { EmptyTodos } from '../EmptyTodos';
-import { TodoForm } from '../components/TodoForm';
-import { CreateTodoButton } from '../components/CreateTodoButton';
+import { TodoCounter } from '../components/todo-counter/TodoCounter';
+import { TodoSearch } from '../components/todo-search/SearchTodo';
+import { TodoList } from '../components/todo-list/TodoList';
+import { TodoItem } from '../components/todo-item/TodoItem';
+import { TodosError } from '../todos-error/TodosError';
+import { TodosLoading } from '../todos-loading/TodosLoading';
+import { EmptyTodos } from '../empty-todos/EmptyTodos';
+import { TodoForm } from '../components/todo-form/TodoForm';
+import { CreateTodoButton } from '../components/create-todo-button/CreateTodoButton';
 import { ModalCreateTodo } from '../components/modal/ModalCreateTodo';
 
 function AppUI() {
