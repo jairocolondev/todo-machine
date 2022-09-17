@@ -17,17 +17,22 @@ function TodoForm() {
   };
   const onSubmit = (event) => {
     event.preventDefault();
+    if (newTodoValue.length <= 0) {
+      return (
+        alert("El campo de la TAREA está vacío...👉​ Crea una Tarea")
+      );
+    }
     addTodo(newTodoValue);
     setOpenModal(false);
   };
 
   return (
     <form onSubmit={onSubmit}>
-      <label>Escribe tu nuevo TODO</label>
+      <label>Escribe tu nueva TAREA</label>
       <textarea
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Cortar la cebolla oara el almuerzo"
+        placeholder="Crea una Tarea"
       />
       <div className="TodoForm-buttonContainer">
         <button

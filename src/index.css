@@ -3,11 +3,36 @@ body {
   padding: 0;
   background: #F2F4F5;
   color: #1E1E1F;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #root {
   margin: 0 24px;
   position: relative;
   min-height: 100vh;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #220470;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8624e1;
+  border-radius: 12px;
 }
