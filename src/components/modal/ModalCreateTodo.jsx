@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './Modal.css';
 
-function Modal({ children }) {
+function ModalCreateTodo({ children }) {
   return ReactDOM.createPortal(
     <div className="ModalBackground">
       {children}
@@ -11,4 +11,4 @@ function Modal({ children }) {
   );
 }
 
-export { Modal };
+export { ModalCreateTodo };
