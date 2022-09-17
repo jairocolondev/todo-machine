@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TodosError() {
-  return <p>Desespérate, hubo un error...</p>;
+  return <h2>Hubo un error, recarga la Página...⚠️​</h2>;
 }
 
 export { TodosError };

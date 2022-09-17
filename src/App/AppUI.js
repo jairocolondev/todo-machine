@@ -1,15 +1,15 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
-import { TodoCounter } from '../TodoCounter';
-import { TodoSearch } from '../TodoSearch';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
+import { TodoContext } from '../context/TodoContext';
+import { TodoCounter } from '../components/TodoCounter';
+import { TodoSearch } from '../components/TodoSearch';
+import { TodoList } from '../components/TodoList';
+import { TodoItem } from '../components/TodoItem';
 import { TodosError } from '../TodosError';
 import { TodosLoading } from '../TodosLoading';
 import { EmptyTodos } from '../EmptyTodos';
-import { TodoForm } from '../TodoForm';
-import { CreateTodoButton } from '../CreateTodoButton';
-import { Modal } from '../Modal';
+import { TodoForm } from '../components/TodoForm';
+import { CreateTodoButton } from '../components/CreateTodoButton';
+import { ModalCreateTodo } from '../components/modal/ModalCreateTodo';
 
 function AppUI() {
   const {
@@ -44,9 +44,9 @@ function AppUI() {
       </TodoList>
 
       {!!openModal && (
-        <Modal>
+        <ModalCreateTodo>
           <TodoForm />
-        </Modal>
+        </ModalCreateTodo>
       )}
 
       <CreateTodoButton
